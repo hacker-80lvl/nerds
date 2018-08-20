@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="shop">
 
 <head>
     <meta charset="UTF-8">
@@ -35,39 +35,280 @@
     </header>
 
     <main class="main-content">
-
+        <h1>Магазин готовых шаблонов</h1>
+        <section class="templates container">
+            <h2 class="visually-hidden">Каталог шаблонов</h2>
+            <form action="#" method="POST" class="filters">
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <input type="range">
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul class="filter-grid-list">
+                        <li class="filter-grid-item">
+                            <label for="filter-radio-adaptive">
+                                <input type="radio" name="grid" class="visually-hidden" id="filter-radio-adaptive" checked>
+                                <span class="radio-indicator"></span>
+                                Адаптивная
+                            </label>
+                        </li>
+                        <li class="filter-grid-item">
+                            <label for="filter-radio-fixed">
+                                <input type="radio" name="grid" class="visually-hidden" id="filter-radio-fixed">
+                                <span class="radio-indicator"></span>
+                                Фиксированная
+                            </label>
+                        </li>
+                        <li class="filter-grid-item">
+                            <label for="filter-radio-elastic">
+                                <input type="radio" name="grid" class="visually-hidden" id="filter-radio-elastic">
+                                <span class="radio-indicator"></span>
+                                Резиновая
+                            </label>
+                        </li>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul class="filter-features-list">
+                        <li class="filter-features-item">
+                            <label for="filter-checkbox-slider">
+                                <input type="checkbox" name="feature" class="visually-hidden" id="filter-checkbox-slider" checked>
+                                <span class="checkbox-indicator"></span>
+                                Слайдер
+                            </label>
+                        </li>
+                        <li class="filter-features-item">
+                            <label for="filter-checkbox-block">
+                                <input type="checkbox" name="feature" class="visually-hidden" id="filter-checkbox-block">
+                                <span class="checkbox-indicator"></span>
+                                Блок преимуществ
+                            </label>
+                        </li>
+                        <li class="filter-features-item">
+                            <label for="filter-checkbox-news">
+                                <input type="checkbox" name="feature" class="visually-hidden" id="filter-checkbox-news" checked>
+                                <span class="checkbox-indicator"></span>
+                                Новости
+                            </label>
+                        </li>
+                        <li class="filter-features-item">
+                            <label for="filter-checkbox-gallary">
+                                <input type="checkbox" name="feature" class="visually-hidden" id="filter-checkbox-gallary">
+                                <span class="checkbox-indicator"></span>
+                                Галерея
+                            </label>
+                        </li>
+                        <li class="filter-features-item">
+                            <label for="filter-checkbox-cart">
+                                <input type="checkbox" name="feature" class="visually-hidden" id="filter-checkbox-cart">
+                                <span class="checkbox-indicator"></span>
+                                Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+            <div>
+                <form action="#" class="sorts">
+                    <p>Сортировать:</p>
+                    <div>
+                        <ul class="type-list">
+                            <li class="type-item">
+                                <input type="radio" name="type" class="visually-hidden" id="price" checked>
+                                <label for="price">По цене</label>
+                            </li>
+                            <li class="type-item">
+                                <input type="radio" name="type" class="visually-hidden" id="type">
+                                <label for="type">По типу</label>
+                            </li>
+                            <li class="type-item">
+                                <input type="radio" name="type" class="visually-hidden" id="id">
+                                <label for="id">По названию</label>
+                            </li>
+                        </ul>
+                        <ul class="sort-list">
+                            <li class="sort-item">
+                                <input type="radio" name="sort" class="visually-hidden" id="down" checked>
+                                <label for="down"></label>
+                            </li>
+                            <li class="sort-item">
+                                <input type="radio" name="sort" class="visually-hidden" id="up">
+                                <label for="up"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <ul class="templates-list">
+                    <li class="templates-item sedona">
+                        <div class="rounds">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                        <div class="price visually-hidden">
+                            <h3>Sedona</h3>
+                            <p>Информационный сайт
+                                <br>для туристов</p>
+                            <button type="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="templates-item pink">
+                        <div class="rounds">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                        <div class="price visually-hidden">
+                            <h3>Pink App</h3>
+                            <p>Продуктовый лендинг
+                                <br>приложения для iOS и Android</p>
+                            <button type="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="templates-item barbershop">
+                        <div class="rounds">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                        <div class="price visually-hidden">
+                            <h3>Barbershop</h3>
+                            <p>Сайт салоны красоты.
+                                <br>Для мужчин, да.</p>
+                            <button type="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="templates-item mishka">
+                        <div class="rounds">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                        <div class="price visually-hidden">
+                            <h3>Mishka</h3>
+                            <p>Интернет-магазин
+                                <br>вязаных игрушек</p>
+                            <button type="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="templates-item aplus">
+                        <div class="rounds">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                        <div class="price visually-hidden">
+                            <h3>A Plus</h3>
+                            <p>Лендинг курсов повышения
+                                <br>квалификации</p>
+                            <button type="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="templates-item kvast">
+                        <div class="rounds">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                        <div class="price visually-hidden">
+                            <h3>Кваст</h3>
+                            <p>Промо-сайт производителя
+                                <br>крафтового кваса</p>
+                            <button type="button">9 900 руб.</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav class="pagination">
+                <ul class="pagination-list">
+                    <li>
+                        <a class="current">1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="page">2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="page">3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="next">следующая</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </main>
 
     <footer class="main-footer">
-        <div class="contact-container">
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            <p>тел. +7 (812) 275-75-75</p>
+        <div class="map">
+            <div class="container">
+                <div class="contacts">
+                    <h3>NЁRDS DESIGN STUDIO</h3>
+                    <address>191186, Санкт-Петербург,
+                        <br> ул. Б. Конюшенная, д. 19/8</address>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <button type="button" class="button">Напишите нам</button>
+                </div>
+                <img src="img/map-marker.png" alt="Мы находимся здесь" class="map-marker">
+            </div>
         </div>
-        <ul class="social">
-            <li class="social-item">
-                <a href="http://vk.com" target="_blank">
-                    <span class="social-link visually-hidden">ВКонтакте</span>
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="http://facebook.com" target="_blank">
-                    <span class="social-link visually-hidden">Фуйсбук</span>
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="http://instagram.com" target="_blank">
-                    <span class="social-link visually-hidden">Инстаграм</span>
-                </a>
-            </li>
-        </ul>
-        <p>
-            Давайте дружить, это выгодно!
-        </p>
-        <p>
-            Скидка 10% для друзей из социальных сетей.
-        </p>
+        <div class="doc-end container">
+            <ul class="social">
+                <li class="social-item">
+                    <a href="http://vk.com" target="_blank" class="vk">
+                        <span class="social-link visually-hidden">ВКонтакте</span>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.facebook.com/otabek.sobirov.1428" target="_blank" class="fb">
+                        <span class="social-link visually-hidden">Фуйсбук</span>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.instagram.com/otabek8421/" target="_blank" class="ig">
+                        <span class="social-link visually-hidden">Инстаграм</span>
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <p class="big">
+                    Давайте дружить, это выгодно!
+                </p>
+                <p>
+                    Скидка 10% для друзей из социальных сетей.
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <section class="modal-container visually-hidden">
+        <div class="modal">
+            <h2>Напишите нам</h2>
+            <form action="">
+                <label for="name">Ваше имя:
+                    <br>
+                    <input type="text" id="name" placeholder="Имя Фамилия" required>
+                </label>
+                <label for="mail">Ваш e-mail:
+                    <br>
+                    <input type="email" id="mail" placeholder="email@example.com" required>
+                </label>
+                <label for="mail-content">Текст письма:
+                    <textarea name="" id="mail-content" placeholder="В свободной форме" required></textarea>
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
+            <button type="button" class="close">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+                    <path fill="#fecccd" d="M13.328,10.5l7.371-7.371c0.389-0.389,0.389-1.025,0-1.414l-1.414-1.415c-0.389-0.389-1.025-0.389-1.414,0
+        	L10.5,7.672L3.129,0.301c-0.389-0.389-1.025-0.389-1.414,0L0.301,1.715c-0.389,0.389-0.389,1.025,0,1.414L7.672,10.5l-7.371,7.371
+        	c-0.389,0.389-0.389,1.025,0,1.414l1.415,1.414c0.389,0.389,1.025,0.389,1.414,0l7.371-7.371l7.371,7.371
+        	c0.389,0.389,1.025,0.389,1.414,0l1.414-1.414c0.389-0.389,0.389-1.025,0-1.414L13.328,10.5z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>
