@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Nёdrs - Магазин</title>
 </head>
@@ -41,7 +42,12 @@
             <form action="#" method="POST" class="filters">
                 <fieldset>
                     <legend>Стоимость:</legend>
-                    <input type="range">
+                    <div class="range-container">
+                        <div id="slider-range"></div>
+                        <p>
+                            <input type="text" id="amount" readonly>
+                        </p>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
@@ -308,7 +314,24 @@
         </div>
     </section>
 
+    <script src="script/jquery.js"></script>
+    <script src="script/jquery-ui.js"></script>
     <script src="script/script.js"></script>
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [0, 370],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values",
+                0) + " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
 </body>
 
 </html>
