@@ -5,7 +5,7 @@ var modal_show_button = document.querySelector(".main-footer .contacts .button")
 var modal_close_button = document.querySelector(".modal-container .close");
 var sliders = document.querySelectorAll(".features-list .features-item");
 var sliders_control = document.querySelectorAll(".slider-control-item label");
-var timer = setInterval(sliders_animate, 6000);
+var interval = setInterval(sliders_animate, 6000);
 
 function sliders_animate() {
     if (sliders[0] != null) {

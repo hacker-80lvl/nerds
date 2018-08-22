@@ -680,6 +680,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .shop .filters .ui-slider {
+	z-index: 0;
     width: 220px;
 }
 
